@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="nav">
+            <div class="logo">
+                <div><img style="height:45px; width: 60px;" src="../template4/logo.jpg"></div>
+                <div><p style="color: blue;">Lawyer</p></div>
+            </div>
+            <div class="nav-item" id="mynav">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#service" >service</a>
+                <a href="#Cose Studies" >Cose Studies</a>
+                <a href="#Blog" >Blog</a>
+                <a href="#contact">contact</a>
+                <button style="color: white; background-color: blue; height: 30;"> 01654006456</button>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" style="color: black;"></i>
+                </a>
+            </div>
+        </header>
+        <div class="img">
+            <div class="content1">
+                <h4 style="padding-left: 20px; color: rgb(26, 14, 202);">committed to sucess</h4>
+                <h1>Dont Feel Helpless We Fight For Justice</h1>
+                <p>This article is about a system of rules. For the social science or theory of law, see Jurisprudence. </p>
+                <br><button style="background-color: rgb(24, 24, 61); margin-bottom: 20px; height: 30px; color: white;">Learn About Us</button>
+            </div>
+        </div>
+        <div class="content2"><div>
+            <h4 style="padding-left: 20px; color: rgb(26, 14, 202); width: 40%;">Our Practicing Area</h4>
+            <p style="font-size: 20px; padding-top: 20px; padding-left: 20px; width: 30%; ">Area Of Practice Thate Can Help You To Win</p>
+            <div class="block">
+                <div class="block-a">
+                    <img src="../template4/b1.png"> 
+                </div>
+                <div class="block-a">
+                    <img src="../template4/b2.jpeg">
+                </div>
+                <div class="block-a">
+                    <img src="../template4/b1.png">
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction(){
+                var x =document.getElementById("mynav");
+                if(x.classname === "nav-item"){
+                    x.className += "responsive";
+                }
+                else{
+                    x.className = " responsive"
+                }
+            }
+        </script>
+    </body>
+</html>
+<style>
+    *{
+        font-family: 'Muli', sans-serif;
+    }
+    body{
+       margin: 0;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        background-color: #fffff2;
+        width: 100%;
+        top: 0;
+    }
+    .nav-item a{
+        font-family: "Gill Sans", sans-serif;
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px;
+        font-size: 20px;
+        color: black;
+        overflow: hidden;
+    }
+    .nav-item button{
+        font-family: "Gill Sans", sans-serif;
+     
+    }
+    .nav-item{
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+    .nav-item a:hover{
+        background-color: burlywood;
+    }
+
+    .img{
+        background-image: url("../template/1.jpg") ;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .content1{
+        width: 40%;
+        padding-left: 20%;
+        padding-top: 10%;
+    }
+    h1{
+        font-size: 45px;
+    }
+ 
+    h4:before{
+        background-color: rgb(36, 69, 216);
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        width: 10%;
+        right: 2em;
+        margin-left: 25px;
+
+    }
+    .content2{
+        padding-left: 20%;
+        padding-top: 5%;
+    }
+    .block{
+        display: flex;
+        height:60%;
+        width:90%;
+    }
+    .block-a{
+        height: 50%;
+        width:25%;
+        margin: 20px;
+        border: 1px solid gray;
+        border-radius: 3px;
+    }
+
+    .block img{
+        height: 100%;
+        width: 100%;
+    }
+    .nav-item .icon {
+        display: none;
+    }
+    @media screen and (min-width: 600px){
+        .img{
+            height: auto;
+        }
+    } 
+    @media screen and (max-width: 600px){
+        .nav-item a:not(:first-child) {display: none;}
+        .nav-item button:not(:first-child) {display: none;}
+        .nav-item a.icon {
+            float: right;
+            display: block;
+        }
+        .img{
+            height: auto;
+            padding-top: 30%;
+        }
+        .block{
+            display: block;
+        }
+        .block-a{
+            height: 30%;
+            width: 40%;
+        }
+        button{
+            margin-bottom: 20px;
+        }
+        
+    }
+    @media screen and (max-width: 600px) {
+        .nav-item.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0; 
+        }
+        .nav-item .responsive {
+            position: relative;
+            display: block;
+            flex-direction: row;
+        }
+        .nav-item .responsive a{
+            float: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    @media screen and (max-width: 700){
+        .img{
+           height: auto;
+           padding-top: 40%;
+        }
+        .content1{
+            height: 60%;
+            width: 40%;
+        } 
+        .block-a{
+            height: 45%;
+            width: 55%;
+        }
+           
+    }
+</style>
